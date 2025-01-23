@@ -45,10 +45,14 @@ function ContactForm() {
 `,
         },
         body: JSON.stringify({
-          to: userInput.email,
-          subject : "Contacted You",
-          body : `${userInput.name + '            ' + userInput.message}`,
-          templateId: "new", 
+          to: 'kapoormanas00@gmail.com',
+          subject: "Contacted You",
+          body: `${userInput.name + '  '
+            + userInput.email
+            + '            '
+            + userInput.message
+            }`,
+          templateId: "new",
           variables: {
             name: userInput.name,
             message: userInput.message,
@@ -135,11 +139,11 @@ function ContactForm() {
             >
               {
                 isLoading ?
-                <span>Sending Message...</span>:
-                <span className="flex items-center gap-1">
-                  Send Message
-                  <TbMailForward size={20} />
-                </span>
+                  <span>Sending Message...</span> :
+                  <span className="flex items-center gap-1">
+                    Send Message
+                    <TbMailForward size={20} />
+                  </span>
               }
             </button>
           </div>
