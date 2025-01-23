@@ -18,15 +18,24 @@ function AboutSection() {
           <p className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">
             Who I am?
           </p>
-          <p className="text-gray-200 text-sm lg:text-lg">
-            {personalData.description}
-          </p>
+          <div className="text-gray-200 text-sm lg:text-lg">
+            <p>
+              Hi, I’m <strong>Manas Kapoor</strong>, a passionate and driven programmer with a love for learning and innovation. My expertise lies in <strong>JavaScript</strong>, and I excel at building intuitive, scalable, and impactful web applications. I am a quick learner with a self-driven attitude, always eager to explore emerging technologies and tackle challenging problems.
+            </p>
+            <p className="mt-2">
+              With a strong foundation in <strong>full-stack web development</strong>, I strive to make the web more accessible and open to everyone. I am enthusiastic about creating solutions that not only meet user needs but also exceed expectations through clean code, thoughtful design, and cutting-edge technology.
+            </p>
+            <p className="mt-2">
+              I thrive in dynamic environments and am constantly improving my skill set to stay ahead in this ever-evolving industry. Whether it’s front-end, back-end, or the intersection of both, I am ready to take on exciting opportunities where I can contribute and grow.
+            </p>
+          </div>
+
         </div>
         <div className="flex justify-center order-1 lg:order-2">
           <Image
             src={personalData.profile}
-            width={280}
-            height={280}
+            width={350}
+            height={300}
             alt="MANAS KAPOOR"
             className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
           />
