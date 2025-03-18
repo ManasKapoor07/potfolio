@@ -8,5 +8,5 @@ export const personalData = {
   address: 'Malla gorakhpur vikaspuri lane-2 , Haldwani ',
   github: 'https://github.com/ManasKapoor07',
   linkedIn: 'https://www.linkedin.com/in/manas-kapoor-51b5a7215/',
-  resume: "https://resume-manas.s3.eu-north-1.amazonaws.com/Manas-resume.pdf"
+  resume: "https://resume-manas.s3.eu-north-1.amazonaws.com/Manas_Kapoor.pdf"
 }
