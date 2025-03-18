@@ -1,6 +1,7 @@
-const path = require('path')
- 
-module.exports = {
+const path = require('path');
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
@@ -9,18 +10,25 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'res.cloudinary.com',
-        pathname: '**',
+        pathname: '/**',
       },
       {
         protocol: 'https',
         hostname: 'media.dev.to',
-        pathname: '**',
+        pathname: '/**',
       },
       {
         protocol: 'https',
         hostname: 'media2.dev.to',
-        pathname: '**',
+        pathname: '/**',
       },
     ],
   },
-}
+  // Optional: Enable experimental or performance features
+  experimental: {
+    appDir: true, // Ensure you're using the "app" directory correctly if on Next 13+
+  },
+  output: 'standalone', // For Vercel and Docker compatibility
+};
+
+module.exports = nextConfig;
